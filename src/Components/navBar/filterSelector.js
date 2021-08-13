@@ -6,7 +6,6 @@ function Selector() {
 
     // Changes the selector text to show the selected option
     const handleValueChange = e => {
-        console.log(e);
         setValue(e.target.innerText);
     }
 
