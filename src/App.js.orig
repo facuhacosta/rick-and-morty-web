@@ -3,16 +3,12 @@ import './App.css';
 import Navigation from './Components/navBar/navigation';
 import CharactersList from './Components/charactersList/charactersList';
 import CommonList from './Components/CommonList.js/commonList';
-import CharacterDetails from './Components/characterDetails/characterDetails';
+import CharacterDetails from './Components/charactersList/characterDetails';
 import { 
   BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom"
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
-
-library.add(fas)
 
 function App() {
 

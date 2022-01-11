@@ -6,14 +6,14 @@ import Toggler from "./navToggler";
 
 function Navigation() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-            <a className="navbar-brand rounded-circle p-0" href="#"><img className='d-inline-block rounded-circle' width="50" height="50" src="rick1.jpg" /> </a>
-            <Toggler />
-            <NavItems /> 
-            <div className="d-flex col-md-6 col-sm-12 col-12 p-0 order-last order-md-1 order-lg-last" >
+        <nav className="bg-white-400 w-h h-16 px-4 flex items-center justify-between shadow-md rounded-b">
+            <img className='rounded-full w-12 tablet:w-14 h-12 tablet:h-14' src="rick1.jpg" alt="logo"/>
+            <div className="d-flex w-h h-6" >
                 <SearchBar />
-                <Selector />
+                {/* <Selector /> */}
             </div>
+            <NavItems /> 
+            <Toggler />
         </nav>
     );
 }

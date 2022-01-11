@@ -30,5 +30,5 @@ export default function GetData(filter , page) {
             })
     }, []);
     
-    return { hasMore , results , isLoading};
+    return { hasMore , results , isLoading };
 }

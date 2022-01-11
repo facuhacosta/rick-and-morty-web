@@ -1,11 +1,14 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function SearchBar() {
     return (
-        <form className="form-inline my-lg-0 col-md-9 col-9 p-0">
-            <input className="form-control mr-2 col-8" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        <div className="w-6 h-6 flex text-gray-400 items-center">
+        <input className="border-2 rounded-2xl border-gray-400 text-lg pl-2 pr-6 focus:outline-none" type="text" placeholder="Search" aria-label="Search" />
+            <button className="color-red-100 relative right-6" type="submit">
+              <FontAwesomeIcon icon='search' />
+            </button>
+        </div>
     );
 }
 
